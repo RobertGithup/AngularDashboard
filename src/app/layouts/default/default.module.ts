@@ -5,7 +5,6 @@ import { DashboardComponent } from "src/app/modules/dashboard/dashboard.componen
 import { RouterModule } from "@angular/router";
 import { PostsComponent } from "src/app/modules/posts/posts.component";
 import { SharedModule } from "src/app/shared/shared.module";
-import { FormControl } from "@angular/forms";
 
 import { FormsModule } from "@angular/forms";
 import { FlexLayoutModule } from "@angular/flex-layout";
@@ -39,7 +38,7 @@ import {
     MatOptionModule,
     MatInputModule,
     MatAutocompleteModule,
-    FormControl,
+
     FormsModule,
   ],
 })
