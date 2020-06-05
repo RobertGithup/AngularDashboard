@@ -1,3 +1,36 @@
-<div><app-area></app-area></div>
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>From Date</mat-label>
+    <input
+      matInput
+      placeholder="From Date"
+      type="date"
+      (change)="valuechange($event)"
+      value=""
+    />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>To Date</mat-label>
+    <input matInput placeholder="To Date" type="date" value="" />
+  </mat-form-field>
 
-<mat-divider></mat-divider>
+  <mat-form-field class="example-full-width">
+    <input
+      type="text"
+      placeholder="Branch"
+      aria-label="Number"
+      matInput
+      [matAutocomplete]="auto"
+    />
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let option of options" [value]="option">
+        {{ option }}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+
+  <mat-divider></mat-divider>
+  <div><app-area></app-area></div>
+
+  <mat-divider></mat-divider>
+</form>

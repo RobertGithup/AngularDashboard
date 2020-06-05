@@ -6,6 +6,11 @@ import { AppComponent } from "./app.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { DefaultModule } from "./layouts/default/default.module";
 import { HighchartsChartModule } from "highcharts-angular";
+
+import { MatInputModule } from "@angular/material/input";
+
+import { ReactiveFormsModule } from "@angular/forms";
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -14,6 +19,8 @@ import { HighchartsChartModule } from "highcharts-angular";
     BrowserAnimationsModule,
     DefaultModule,
     HighchartsChartModule,
+    MatInputModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
